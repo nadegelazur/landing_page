@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+ }
+html {
+    /** This defines what 1rem is **/
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    /* position: relative; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    height: 100vh;
+    background-image:   linear-gradient(rgba(0 109 255 / 79%), rgba(252 255 0 / 53%)),
+                        url(/images/ass_10.jpeg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center center;
+    padding: 3rem;
+}
+.header,
+.footer {
+    background-color: #ccc615c4;
+    height: auto;
+    box-shadow: .5rem .5rem .5rem #3e4a5d76;
+}
+.header-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 2px rgba(53, 52, 52, 0.269);
+}
+.contact {
+    letter-spacing: .1rem;
+}
+.contact h2 {
+    line-height: 1.5;
+}
+.number {
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 111rem;
+    /* position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+}
+.title-h1 {
+    font-size:3.7rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+.service {
+    background-color: rgba(255, 255, 255, 0.38);
+   
+    box-shadow: .5rem .5rem .5rem #3e4a5d76;
+}
+.service-item {
+    position: relative;
+    height: 35.7rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem .5rem #3e4a5d76;
+}
+.service i {
+    font-size: 3rem;
+}
+.service-item_1 {
+    background-image: url(/images/ass_8.jpeg);
+}
+.service-item_2 {
+    background-image: url(/images/ass_3.jpeg);
+}
+.service-item_3 {
+    background-image: url(/images/ass_2.jpeg);
+}
+.icon {
+    background-color: #4e668c;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: .5rem;
+}
+.text-info {
+    color: #fff !important;
+    background-color: #4e668cc7;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; 
+    /* width: 100%; */
+    /* text-align: center; */
+    letter-spacing: .2rem;
+    text-transform: uppercase;  
+    font-weight: 400;
+}
+.text-info h3 {
+    font-size: 2.5rem;
+}
+.more-info {
+    background-color: #4e668c;
+    position: absolute;
+    bottom: .8rem;
+    right: 2rem;
+    color: #fff !important;
+    font-size: 1.4rem;
+}
+
+/** MEDIA QUERY MANAGER **/
+/* 
+0    - 600px:     Phone 
+600  - 900px:     Tablet portrait 
+900  - 1200px:    Tablet landscape
+[1200 - 1800px]:    is where our normal styles apply
+1800px + :       Big desktop 
+*/
+
+@media (max-width: 370px) {
+    .service {
+        padding: 0rem, 1rem;
+    }
+    .text-info h3 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .header-title {
+        margin-bottom: 1rem;
+    }
+    .contact {
+        justify-content: end;
+    }
+    .title-contact {
+        display: none;
+    }
+    .title-h1 {
+        font-size:2.7rem;
+        margin-bottom: 6rem;
+    }
+    .footer {
+        padding: 2rem;
+    }
+}
+@media (max-width: 900px) {
+    .contact {
+        letter-spacing: .1rem;
+        padding-top: 2rem;
+    }
+    .contact h2 {
+        line-height: 1.2;
+        font-size: 1.5rem;
+    }
+    .number {
+        line-height: 2.2;
+    }
+    .title-h1 {
+        margin-bottom: 4rem;
+    }
+}
+@media (max-width: 1200px) {
+    .contact h2 {
+        line-height: 1.2;
+        font-size: 1.3rem;
+    }
+    .number {
+        line-height: 2.2;
+    }
+    .title-h1 {
+        margin-bottom: 4rem;
+    }
+   
+}
